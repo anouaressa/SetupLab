@@ -1,7 +1,8 @@
-��#� �S�e�t�u�p�L�a�b�
-�This a vagrantfile for setup our lab 
-�
-we create a 5 boxs 
+#SetupLab
+
+This a vagrantfile for setup our lab 
+
+#we create a 5 boxs 
 
 3boxs for web server
 1box for database
