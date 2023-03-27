@@ -45,7 +45,7 @@ Vagrant.configure("2") do |config|
             node.vm.network :private_network, ip: machine[:ip]
             node.vm.network "forwarded_port", guest: 22, host: machine[:ssh_port], id: "ssh"
             node.vm.provider :virtualbox do |vb|
-                vb.customize ["modifyvm", :id, "--memory", 300]
+                vb.customize ["modifyvm", :id, "--memory", 512]
                 vb.customize ["modifyvm", :id, "--cpus", 1]
             end
         end
