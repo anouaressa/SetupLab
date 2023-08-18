@@ -1,0 +1,16 @@
+---
+- name: Update Ubuntu Packages
+  hosts: your_target_hosts
+  become: yes  # This will enable privilege escalation to root
+
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Upgrade all packages
+      apt:
+        upgrade: dist
+        autoremove: yes
+        autoclean: yes
+
